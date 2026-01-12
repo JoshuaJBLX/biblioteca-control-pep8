@@ -1,16 +1,20 @@
-from biblioteca import *
+"""
+Este módulo contiene la lógica principal de la biblioteca.
+"""
 
-l=liblio("central")
+from biblioteca import biblioteca,book
 
-b1=bk("Python","Guido",1)
-b2=bk("Java","Gosling",2)
+objbiblioteca=biblioteca("central")
 
-l.addb(b1)
-l.addb(b2)
+book1=book("Python","Guido",1)
+book2=book("Java","Gosling",2)
 
-l.show()
+objbiblioteca.addb(book1)
+objbiblioteca.addb(book2)
 
-print(b1.prest())
-print(b1.prest())
-b1.ret()
-print(b1.prest())
+objbiblioteca.show()
+
+print(book1.prest())
+print(book1.prest())
+book1.ret()
+print(book1.prest())

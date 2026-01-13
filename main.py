@@ -1,20 +1,21 @@
 """
-Este módulo contiene la lógica principal de la biblioteca.
+Módulo principal para la gestión de libros en una biblioteca.
 """
 
-from biblioteca import biblioteca,book
+from biblioteca import Biblioteca, Book
 
-objbiblioteca=biblioteca("central")
 
-book1=book("Python","Guido",1)
-book2=book("Java","Gosling",2)
+objetoBiblioteca = Biblioteca("central")
 
-objbiblioteca.addb(book1)
-objbiblioteca.addb(book2)
+book1 = Book("Python", "Guido", 1)
+book2 = Book("Java", "Gosling", 2)
 
-objbiblioteca.show()
+objetoBiblioteca.addb(book1)
+objetoBiblioteca.addb(book2)
 
-print(book1.prest())
-print(book1.prest())
+objetoBiblioteca.show()
+
+print(book1.lend())
+print(book1.lend())
 book1.ret()
-print(book1.prest())
+print(book1.lend())

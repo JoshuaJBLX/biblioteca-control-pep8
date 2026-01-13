@@ -17,5 +17,5 @@ objetoBiblioteca.show()
 
 print(book1.lend())
 print(book1.lend())
-book1.ret()
+book1.back()
 print(book1.lend())
